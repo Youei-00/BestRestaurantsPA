@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CitySelector from "./components/CitySelector";
+import TopRestaurants from "./components/TopRestaurants";
 
 function App() {
+  const [city, setCity] = useState("Philadelphia");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: 20 }}>
+      <h1>🍽️ CMPSC445Project2 - Best in PA</h1>
+
+      <CitySelector city={city} setCity={setCity} />
+
+      <TopRestaurants city={city} />
     </div>
   );
 }
