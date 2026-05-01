@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🍽️ CMPSC445Project2 - Best in PA</h1>
+      <h1>🍽️ Best Restaurants in PA</h1>
 
       <CitySelector city={city} setCity={setCity} />
 

@@ -11,6 +11,11 @@ function CitySelector({ city, setCity }) {
         <option>West Chester</option>
         <option>Norristown</option>
         <option>Doylestown</option>
+        <option>Pottstown</option>
+        <option>Media</option>
+        <option>Landsdale</option>
+        <option>Levittown</option>
+        <option>Phoenixville</option>
       </select>
     </div>
   );
